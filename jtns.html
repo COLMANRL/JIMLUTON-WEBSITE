@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTN SW</title>
+     
+   <link rel="stylesheet" href="jtns.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="jtns.html" class="w3-bar-item w3-button w3-wide">
+     <img class="logo" src="logo-black6.jpg" alt="logo"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href=#footer-address-list class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href=#footer-address-list onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<hr> <hr/>
+
+<!-- Header with full-height image -->
+<header class="mySlides bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">JIMLUTON SOFTWARES</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">JIMLUTON SOFTWARES</span><br>
+    <span class="w3-large"></span>
+    <p><a href="#services" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+ 
+</header>
+<!-- Header with full-height image -->
+<header class="mySlides bgimg-2 w3-display-container w3-grayscale-min w3-animate-top" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">CYBERSECURITY SOLUTIONS </span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">CYBERSECURITY SOLUTIONS</span><br>
+    <span class="w3-large"></span>
+    <p><a href="#services" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn how we protect your data</a></p>
+  </div> 
+ 
+</header>
+
+<!-- Header with full-height image -->
+<header class="mySlides bgimg-3 w3-display-container w3-grayscale-min w3-animate-left" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">SOFTWARE SOLTIONS</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">SOFTWARE SOLUTIONS</span><br>
+    <span class="w3-large"></span>
+    <p><a href="#services" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"> Start your digital journey with us</a></p>
+  </div> 
+ 
+</header>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000);    
+}
+</script>
+
+
+<!-- Below carousel -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Holder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+</head>
+<br>
+<br>
+
+<body>
+    <div class="container-marketing" id="services">
+        <div class="row-ft d-flex" >
+            <div class="col-lg-4">
+                <div class="card text-center card-animation">
+                    <div class="circle-background">
+                        <div class="circle-text">
+                            <img src="featurette1.png" alt="Image 1" width="100" height="100">
+                        </div>
+                    </div>
+                    <h2 class="fw-normal">Elevate Your Business Potential with CRM Integrationand ERP Development Expertise</h2>
+                    <p>Experience the power of a CRM site for streamlined customer interaction, enhanced communication, 
+                    and increased sales. Our tailored solutions let you focus on serving customers.
+                    Contact us today for a thriving business.</p>
+                    <a class="btn btn-secondary" href="#featurette">View details &raquo;</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card text-center card-animation">
+                    <div class="circle-background">
+                        <div class="circle-text"> 
+                            <img src="featurette2.png" alt="Image 2" width="100" height="100">
+                        </div>
+                    </div>
+                    <h2 class="fw-normal">Transform Your Vision into Reality with Website and App Development</h2>
+                    <p>Transform your ideas into a standout website or mobile app with our services. Whether for brand representation 
+                    or customer engagement, we'll make your vision a reality. Start your digital journey with us today.</p>
+                    <a class="btn btn-secondary" href="#featurette2">View details &raquo;</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card text-center card-animation">
+                    <div class="circle-background">
+                        <div class="circle-text">
+                            <img src="featurette2.png" alt="Image 3" width="100" height="100">
+                        </div>
+                    </div>
+                    <h2 class="fw-normal">Fortify Your Digital Fortress with Cutting-Edge Cybersecurity Solutions</h2>
+                    <p>In the ever-changing digital landscape, our cybersecurity solutions and ethical hacking expertise provide strong
+                    defense. Partner with us to stay ahead in digital security. Enhance your cybersecurity strategy by reaching out now.</p>
+                    <a class="btn btn-secondary" href="#featurette3">View details &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="centered-line"></div>
+
+
+     <!-- ======= Featurette1 ======= -->
+     <section id="featurette" class="featurette section-bg animate__animated animate__fadeInUp">
+        <div class="container-fluid" data-aos="fade-up">
+  
+          <div class="row">
+  
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+  
+              <div class="content">
+                <h3>At Jim Luton's, we're not just building <span font-weight="bold" fill="red" font-style="fst-italic">CRM sites</span>; we're crafting your business's future success.<strong></strong></h3>
+                <p>
+                  Join hands with us, and let us show you why we are the architects of customer-centric excellence!
+                </p>
+              </div>
+  
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><!--<span></span>-->Why get a CRM at Jim Luton's ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                      <p>
+                      Tailored for Your Unique Needs:
+                        Your business is one-of-a-kind, and your CRM solution should be too. We don't believe in one-size-fits-all. When you partner with Jim Lutons, we tailor every CRM site to your specific requirements.
+                    </div>
+                  </li>
+  
+             
+  
+                </ul>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("slide-2.jpg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          </div>
+  
+        </div>
+      </section>
+<hr>
+      <!--Featurette2-->
+    <section id="featurette2" class="featurette2 animate__animated animate__fadeInUp">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="slide-app.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+              <h3>Get the best mobile and web application development services</h3>
+              <p class="fst-italic">
+                We are a team of highly skilled and experienced developers who are passionate about their work. We have been developing mobile and web applications , and we know what it takes to make your app successful.
+
+              </p>
+  
+              <div class="featurette2-content">
+  
+              
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+<hr>
+
+
+      <!-- ======= Featurette3 ======= -->
+     <section id="featurette3" class="featurette section-bg animate__animated animate__fadeInUp">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Protect Yourself: Our Cybersecurity Solutions Shield Your Assets. Stay Ahead of Threats<strong></strong></h3>
+              <p>
+                Contact us today to learn how we can help you stay safe online.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><!--<span></span>--> Our cybersecurity solutions protect you/your business from threats and attacks. We offer a range of services, including penetration testing, vulnerability assessments, and more. 
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      
+                    </p>
+                  </div>
+                </li>
+
+                
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("slide-cys.jpg");' data-aos="zoom-in" data-aos-delay="500">&nbsp;</div>
+        </div>
+
+      </div>
+    </section>
+  
+   
+</body>
+</html>
+
+<footer>
+    <div class="footer-1"> 
+        <div class="row justify-content-between">
+            <div class="col-contacts">
+                <h5>l</h5>
+                <ul class="footer-address-list ftr-details" id="footer-address-list">
+                                <li>
+                                    <span><i class="fas fa-envelope"></i></span>
+                                    <p>
+                                        Email
+                                        <span>
+                                            <a href="jimluton@gmail.com">jimluton@gmail.com</a>
+                                        </span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span><i class="fas fa-phone-alt"></i></span>
+                                    <p>
+                                        Phone <span> <a href="tel:+254 768 497828">(+254) 768 497828</a></span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <p>Address 
+                                        <a class="fw-normal d-block" href="https://goo.gl/maps/nEwjfC6F5Dqji8fV6" target="_blank"> Nairobi, Kenya</a>
+                                    </p>
+                                </li>
+                            </ul>
+               
+    </div>
+        </div>
+            </div>
+
+
+
+
+
+</body>
+</html>
