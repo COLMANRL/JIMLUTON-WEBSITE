@@ -92,6 +92,24 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 5000);    
 }
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
 </script>
 
 
@@ -107,28 +125,27 @@ function carousel() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
 </head>
-<br>
+<br id ="services">
 <br>
 
 <body>
-    <div class="container-marketing" id="services">
-        <div class="row-ft d-flex" >
-            <div class="col-lg-4">
+    <div class="container-marketing" >
+        <div class="row" >
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card text-center card-animation">
                     <div class="circle-background">
                         <div class="circle-text">
                             <img src="featurette1.png" alt="Image 1" width="100" height="100">
                         </div>
                     </div>
-                    <h2 class="fw-normal">Elevate Your Business Potential with CRM Integrationand ERP Development Expertise</h2>
-                    <p>Experience the power of a CRM site for streamlined customer interaction, enhanced communication, 
-                    and increased sales. Our tailored solutions let you focus on serving customers.
-                    Contact us today for a thriving business.</p>
+                    <h2 class="fw-normal">Elevate Your Business Potential with CRM and ERP Intergration</h2>
+                    <p>Experience the power of a Customer Relations Management site for streamlined customer interaction, enhanced communication
+                    and increased sales. Reach out today                  </p>
                     <a class="btn btn-secondary" href="#featurette">View details &raquo;</a>
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card text-center card-animation">
                     <div class="circle-background">
                         <div class="circle-text"> 
@@ -142,7 +159,7 @@ function carousel() {
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card text-center card-animation">
                     <div class="circle-background">
                         <div class="circle-text">
