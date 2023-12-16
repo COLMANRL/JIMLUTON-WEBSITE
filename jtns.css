@@ -3,6 +3,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     body, html {
       height: 100%;
       line-height: 1.8;
+      background-color: #fcfcf7;
     }
 
     /* Full height image header */
@@ -193,6 +194,7 @@ box-shadow:  20px 20px 60px #778b91,
 }
 
 .featurette .accordion-list {
+  background-color: #fcfcf0;
   padding: 0 100px 60px 100px;
 }
 
@@ -207,7 +209,7 @@ box-shadow:  20px 20px 60px #778b91,
 
 .featurette .accordion-list li {
   padding: 20px;
-  background: #fff;
+  background: #fcfcf0;
   border-radius: 4px;
 }
 
