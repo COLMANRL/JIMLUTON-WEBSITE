@@ -209,6 +209,109 @@ footer a:hover{
     }
 }
 
+    @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .bouncing-text {
+            display: inline-block;
+            animation: bounce 3s infinite;
+        }
+
+        @keyframes drop {
+            0% {
+                transform: translateY(-50px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+        }
+
+        .bouncing-text{
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .bouncing-text span {
+            display: inline-block;
+            opacity: 0;
+            animation: drop 0.5s ease-in-out backwards;
+        }
+
+        .bouncing-text span:nth-child(1) { animation-delay: 0.7s; }
+        .bouncing-text span:nth-child(2) { animation-delay: 1.2s; }
+        .bouncing-text span:nth-child(3) { animation-delay: 1.8s; }
+        .bouncing-text span:nth-child(4) { animation-delay: 2.5s; }
+        .bouncing-text span:nth-child(5) { animation-delay: 3.3s; }
+        .bouncing-text span:nth-child(6) { animation-delay: 4.2s; }
+        .bouncing-text span:nth-child(7) { animation-delay: 5.2s; }
+        .bouncing-text span:nth-child(8) { animation-delay: 6.3s; }
+        .bouncing-text span:nth-child(9) { animation-delay: 7.5s; }
+        .bouncing-text span:nth-child(10) { animation-delay: 8.8s;}
+        .bouncing-text span:nth-child(11) { animation-delay: 10.2s; }
+
+        @keyframes drop {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .letter-drop {
+            display: inline-block;
+            animation: bounce 3s infinite;
+        }
+        .letter-drop {
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .letter-drop span {
+            display: inline-block;
+            opacity: 0;
+            animation: drop 0.6s ease-in-out forwards;
+        }
+
+        .letter-drop span:nth-child(1) { animation-delay: 0.7s; }
+        .letter-drop span:nth-child(2) { animation-delay: 1.2s; }
+        .letter-drop span:nth-child(3) { animation-delay: 1.8s; }
+        .letter-drop span:nth-child(4) { animation-delay: 2.5s; }
+        .letter-drop span:nth-child(5) { animation-delay: 3.3s; }
+        .letter-drop span:nth-child(6) { animation-delay: 4.2s; }
+        .letter-drop span:nth-child(7) { animation-delay: 5.2s; }
+        .letter-drop span:nth-child(8) { animation-delay: 6.3s; }
+        .letter-drop span:nth-child(9) { animation-delay: 7.5s; }
+        .letter-drop span:nth-child(10) { animation-delay: 8.8s; }
+
+
+
+
 .section:after{
     border-bottom:1px solid #000;
     content:'';
@@ -452,8 +555,8 @@ header {
     <div class="content-wrap">
         <section class="hero">
             <header>
-                <div class="header-logo">
-                    <img class="logo" src="logo-black6.jpg" alt="logo">
+                <div href="homepage.html" class="header-logo" >
+                   <a href="homepage.html"> <img  class="logo" src="logo-black6.jpg" alt="logo"></a>
                 </div>
                 <button class="mobile-nav-toggle" onclick="toggleNav()">MENU</button>
                 <!-- ==================================NAVBAR=============================================== -->
@@ -472,8 +575,37 @@ header {
                 <div class="wrap">
                     <div class="caption">
                         <div class="text-and-image">
-                            <h1>
-                                Empowering your Digital Space with Innovative Software and Cybersecurity Solutions
+                            <h1 >
+                                <h2 class="bouncing-text" >
+                                        
+                                <span> Empowering</span>
+                                <span>your</span>
+                                <span>Digital</span>
+                                <span>Space</span>
+                                <span>with</span>
+                                <span>Innovative</span>
+                                <span>Software</span>
+                                <span>and</span>
+                                <span>Cybersecurity</span>
+                                <span>Solutions</span>
+
+                                </h2>
+                            </h1>
+                            <h1 >
+                                <h2 class="letter-drop" >
+                                        
+                                <span> Empowering</span>
+                                <span>your</span>
+                                <span>Digital</span>
+                                <span>Space</span>
+                                <span>with</span>
+                                <span>Innovative</span>
+                                <span>Software</span>
+                                <span>and</span>
+                                <span>Cybersecurity</span>
+                                <span>Solutions</span>
+
+                                </h2>
                             </h1>
                         </div>
                         <p></p>
